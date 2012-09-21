@@ -15,12 +15,27 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import "MSAnnotation.h"
 #import "MSMapClustering.h"
-#import "MSMapClusteringDelegate.h"
 
-@interface MSViewController : UIViewController
+@interface MSMapClusteringDelegate : NSObject <MKMapViewDelegate>
 
-@property (strong, nonatomic) IBOutlet MSMapClustering *mapView;
+/*
+	A pointer to the main MSMapClustering mapView
+*/
+@property (strong, nonatomic) MSMapClustering *mapView;
+ 
+/*
+	This mapView stores all the annotations, you don't need to
+	worry about it.
+*/
+@property (strong, nonatomic) MKMapView *_allAnnotationsMapView;
+
+/*
+	Initialize it with your MSMapClustering mapView
+*/
+-(id)initWithMapView:(MSMapClustering *)aMapView;
 
 @end

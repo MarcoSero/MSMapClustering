@@ -15,12 +15,23 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
-#import "MSMapClustering.h"
-#import "MSMapClusteringDelegate.h"
+#import "MSAnnotation.h"
 
-@interface MSViewController : UIViewController
+@implementation MSAnnotation
 
-@property (strong, nonatomic) IBOutlet MSMapClustering *mapView;
+@synthesize coordinate;
+@synthesize title;
+@synthesize subtitle;
+@synthesize containedAnnotations;
+@synthesize clusterAnnotation;
+
+- (id)initWithCoordinates:(CLLocationCoordinate2D)location title:(NSString *)t subtitle:(NSString *)s
+{
+    if (self = [super init]) {
+        coordinate = location;
+        self.title = t;
+    }
+    return self;
+}
 
 @end

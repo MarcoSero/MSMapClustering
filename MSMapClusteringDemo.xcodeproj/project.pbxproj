@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A96E1105160CCEAF009B4D95 /* annotations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A96E1104160CCEAF009B4D95 /* annotations.plist */; };
 		A97980F0160CBA23000991C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980EF160CBA23000991C9 /* UIKit.framework */; };
 		A97980F2160CBA23000991C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980F1160CBA23000991C9 /* Foundation.framework */; };
 		A97980F4160CBA23000991C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980F3160CBA23000991C9 /* CoreGraphics.framework */; };
@@ -16,23 +17,35 @@
 		A9798103160CBA23000991C9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9798101160CBA23000991C9 /* MainStoryboard_iPhone.storyboard */; };
 		A9798106160CBA23000991C9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9798104160CBA23000991C9 /* MainStoryboard_iPad.storyboard */; };
 		A9798109160CBA23000991C9 /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9798108160CBA23000991C9 /* MSViewController.m */; };
+		A9798116160CBA2F000991C9 /* MSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A9798111160CBA2F000991C9 /* MSAnnotation.m */; };
+		A9798117160CBA2F000991C9 /* MSMapClustering.m in Sources */ = {isa = PBXBuildFile; fileRef = A9798113160CBA2F000991C9 /* MSMapClustering.m */; };
+		A9798118160CBA2F000991C9 /* MSMapClusteringDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9798115160CBA2F000991C9 /* MSMapClusteringDelegate.m */; };
+		A979811A160CBAE4000991C9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9798119160CBAE4000991C9 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A96E1104160CCEAF009B4D95 /* annotations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = annotations.plist; sourceTree = "<group>"; };
 		A97980EB160CBA23000991C9 /* MSMapClusteringDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSMapClusteringDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97980EF160CBA23000991C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A97980F1160CBA23000991C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A97980F3160CBA23000991C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A97980F7160CBA23000991C9 /* MSMapClusteringDemo-Info.plist */ = {isa = PBXFileReference; path = "MSMapClusteringDemo-Info.plist"; sourceTree = "<group>"; };
+		A97980F7160CBA23000991C9 /* MSMapClusteringDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MSMapClusteringDemo-Info.plist"; sourceTree = "<group>"; };
 		A97980F9160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A97980FB160CBA23000991C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A97980FD160CBA23000991C9 /* MSMapClusteringDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MSMapClusteringDemo-Prefix.pch"; sourceTree = "<group>"; };
-		A97980FE160CBA23000991C9 /* MSAppDelegate.h */ = {isa = PBXFileReference; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		A97980FD160CBA23000991C9 /* MSMapClusteringDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MSMapClusteringDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A97980FE160CBA23000991C9 /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
 		A97980FF160CBA23000991C9 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
 		A9798102160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A9798105160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A9798107160CBA23000991C9 /* MSViewController.h */ = {isa = PBXFileReference; path = MSViewController.h; sourceTree = "<group>"; };
+		A9798107160CBA23000991C9 /* MSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSViewController.h; sourceTree = "<group>"; };
 		A9798108160CBA23000991C9 /* MSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
+		A9798110160CBA2F000991C9 /* MSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAnnotation.h; sourceTree = "<group>"; };
+		A9798111160CBA2F000991C9 /* MSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAnnotation.m; sourceTree = "<group>"; };
+		A9798112160CBA2F000991C9 /* MSMapClustering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMapClustering.h; sourceTree = "<group>"; };
+		A9798113160CBA2F000991C9 /* MSMapClustering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMapClustering.m; sourceTree = "<group>"; };
+		A9798114160CBA2F000991C9 /* MSMapClusteringDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMapClusteringDelegate.h; sourceTree = "<group>"; };
+		A9798115160CBA2F000991C9 /* MSMapClusteringDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMapClusteringDelegate.m; sourceTree = "<group>"; };
+		A9798119160CBAE4000991C9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A979811A160CBAE4000991C9 /* MapKit.framework in Frameworks */,
 				A97980F0160CBA23000991C9 /* UIKit.framework in Frameworks */,
 				A97980F2160CBA23000991C9 /* Foundation.framework in Frameworks */,
 				A97980F4160CBA23000991C9 /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +83,7 @@
 		A97980EE160CBA23000991C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A9798119160CBAE4000991C9 /* MapKit.framework */,
 				A97980EF160CBA23000991C9 /* UIKit.framework */,
 				A97980F1160CBA23000991C9 /* Foundation.framework */,
 				A97980F3160CBA23000991C9 /* CoreGraphics.framework */,
@@ -85,6 +100,8 @@
 				A9798104160CBA23000991C9 /* MainStoryboard_iPad.storyboard */,
 				A9798107160CBA23000991C9 /* MSViewController.h */,
 				A9798108160CBA23000991C9 /* MSViewController.m */,
+				A96E1104160CCEAF009B4D95 /* annotations.plist */,
+				A979810F160CBA2F000991C9 /* MSMapClustering */,
 				A97980F6160CBA23000991C9 /* Supporting Files */,
 			);
 			path = MSMapClusteringDemo;
@@ -99,6 +116,19 @@
 				A97980FD160CBA23000991C9 /* MSMapClusteringDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A979810F160CBA2F000991C9 /* MSMapClustering */ = {
+			isa = PBXGroup;
+			children = (
+				A9798110160CBA2F000991C9 /* MSAnnotation.h */,
+				A9798111160CBA2F000991C9 /* MSAnnotation.m */,
+				A9798112160CBA2F000991C9 /* MSMapClustering.h */,
+				A9798113160CBA2F000991C9 /* MSMapClustering.m */,
+				A9798114160CBA2F000991C9 /* MSMapClusteringDelegate.h */,
+				A9798115160CBA2F000991C9 /* MSMapClusteringDelegate.m */,
+			);
+			path = MSMapClustering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +186,7 @@
 				A97980FA160CBA23000991C9 /* InfoPlist.strings in Resources */,
 				A9798103160CBA23000991C9 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A9798106160CBA23000991C9 /* MainStoryboard_iPad.storyboard in Resources */,
+				A96E1105160CCEAF009B4D95 /* annotations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +200,9 @@
 				A97980FC160CBA23000991C9 /* main.m in Sources */,
 				A9798100160CBA23000991C9 /* MSAppDelegate.m in Sources */,
 				A9798109160CBA23000991C9 /* MSViewController.m in Sources */,
+				A9798116160CBA2F000991C9 /* MSAnnotation.m in Sources */,
+				A9798117160CBA2F000991C9 /* MSMapClustering.m in Sources */,
+				A9798118160CBA2F000991C9 /* MSMapClusteringDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +324,7 @@
 				A979810E160CBA23000991C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

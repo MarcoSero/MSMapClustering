@@ -15,12 +15,20 @@
  * limitations under the License.
  */
 
-#import <UIKit/UIKit.h>
-#import "MSMapClustering.h"
-#import "MSMapClusteringDelegate.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
-@interface MSViewController : UIViewController
+@interface MSAnnotation : NSObject <MKAnnotation>
 
-@property (strong, nonatomic) IBOutlet MSMapClustering *mapView;
+// protocol implementation
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
+
+// MSMapClustering
+@property (nonatomic, retain) MSAnnotation *clusterAnnotation;
+@property (nonatomic, retain) NSArray *containedAnnotations;
+
+- (id)initWithCoordinates:(CLLocationCoordinate2D)location title:(NSString *)t subtitle:(NSString *)s;
 
 @end
