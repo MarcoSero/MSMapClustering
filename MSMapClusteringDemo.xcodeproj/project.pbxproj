@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97980F0160CBA23000991C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980EF160CBA23000991C9 /* UIKit.framework */; };
+		A97980F2160CBA23000991C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980F1160CBA23000991C9 /* Foundation.framework */; };
+		A97980F4160CBA23000991C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97980F3160CBA23000991C9 /* CoreGraphics.framework */; };
+		A97980FA160CBA23000991C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A97980F8160CBA23000991C9 /* InfoPlist.strings */; };
+		A97980FC160CBA23000991C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A97980FB160CBA23000991C9 /* main.m */; };
+		A9798100160CBA23000991C9 /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A97980FF160CBA23000991C9 /* MSAppDelegate.m */; };
+		A9798103160CBA23000991C9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9798101160CBA23000991C9 /* MainStoryboard_iPhone.storyboard */; };
+		A9798106160CBA23000991C9 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9798104160CBA23000991C9 /* MainStoryboard_iPad.storyboard */; };
+		A9798109160CBA23000991C9 /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9798108160CBA23000991C9 /* MSViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A97980EB160CBA23000991C9 /* MSMapClusteringDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSMapClusteringDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A97980EF160CBA23000991C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A97980F1160CBA23000991C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A97980F3160CBA23000991C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A97980F7160CBA23000991C9 /* MSMapClusteringDemo-Info.plist */ = {isa = PBXFileReference; path = "MSMapClusteringDemo-Info.plist"; sourceTree = "<group>"; };
+		A97980F9160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A97980FB160CBA23000991C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A97980FD160CBA23000991C9 /* MSMapClusteringDemo-Prefix.pch */ = {isa = PBXFileReference; path = "MSMapClusteringDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A97980FE160CBA23000991C9 /* MSAppDelegate.h */ = {isa = PBXFileReference; path = MSAppDelegate.h; sourceTree = "<group>"; };
+		A97980FF160CBA23000991C9 /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
+		A9798102160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A9798105160CBA23000991C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A9798107160CBA23000991C9 /* MSViewController.h */ = {isa = PBXFileReference; path = MSViewController.h; sourceTree = "<group>"; };
+		A9798108160CBA23000991C9 /* MSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A97980E8160CBA23000991C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97980F0160CBA23000991C9 /* UIKit.framework in Frameworks */,
+				A97980F2160CBA23000991C9 /* Foundation.framework in Frameworks */,
+				A97980F4160CBA23000991C9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A97980E0160CBA23000991C9 = {
+			isa = PBXGroup;
+			children = (
+				A97980F5160CBA23000991C9 /* MSMapClusteringDemo */,
+				A97980EE160CBA23000991C9 /* Frameworks */,
+				A97980EC160CBA23000991C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A97980EC160CBA23000991C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A97980EB160CBA23000991C9 /* MSMapClusteringDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97980EE160CBA23000991C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A97980EF160CBA23000991C9 /* UIKit.framework */,
+				A97980F1160CBA23000991C9 /* Foundation.framework */,
+				A97980F3160CBA23000991C9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97980F5160CBA23000991C9 /* MSMapClusteringDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A97980FE160CBA23000991C9 /* MSAppDelegate.h */,
+				A97980FF160CBA23000991C9 /* MSAppDelegate.m */,
+				A9798101160CBA23000991C9 /* MainStoryboard_iPhone.storyboard */,
+				A9798104160CBA23000991C9 /* MainStoryboard_iPad.storyboard */,
+				A9798107160CBA23000991C9 /* MSViewController.h */,
+				A9798108160CBA23000991C9 /* MSViewController.m */,
+				A97980F6160CBA23000991C9 /* Supporting Files */,
+			);
+			path = MSMapClusteringDemo;
+			sourceTree = "<group>";
+		};
+		A97980F6160CBA23000991C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A97980F7160CBA23000991C9 /* MSMapClusteringDemo-Info.plist */,
+				A97980F8160CBA23000991C9 /* InfoPlist.strings */,
+				A97980FB160CBA23000991C9 /* main.m */,
+				A97980FD160CBA23000991C9 /* MSMapClusteringDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A97980EA160CBA23000991C9 /* MSMapClusteringDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A979810C160CBA23000991C9 /* Build configuration list for PBXNativeTarget "MSMapClusteringDemo" */;
+			buildPhases = (
+				A97980E7160CBA23000991C9 /* Sources */,
+				A97980E8160CBA23000991C9 /* Frameworks */,
+				A97980E9160CBA23000991C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSMapClusteringDemo;
+			productName = MSMapClusteringDemo;
+			productReference = A97980EB160CBA23000991C9 /* MSMapClusteringDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A97980E2160CBA23000991C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MS;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Università di Torino";
+			};
+			buildConfigurationList = A97980E5160CBA23000991C9 /* Build configuration list for PBXProject "MSMapClusteringDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A97980E0160CBA23000991C9;
+			productRefGroup = A97980EC160CBA23000991C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A97980EA160CBA23000991C9 /* MSMapClusteringDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A97980E9160CBA23000991C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97980FA160CBA23000991C9 /* InfoPlist.strings in Resources */,
+				A9798103160CBA23000991C9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A9798106160CBA23000991C9 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A97980E7160CBA23000991C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A97980FC160CBA23000991C9 /* main.m in Sources */,
+				A9798100160CBA23000991C9 /* MSAppDelegate.m in Sources */,
+				A9798109160CBA23000991C9 /* MSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A97980F8160CBA23000991C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A97980F9160CBA23000991C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9798101160CBA23000991C9 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9798102160CBA23000991C9 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A9798104160CBA23000991C9 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9798105160CBA23000991C9 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A979810A160CBA23000991C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A979810B160CBA23000991C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A979810D160CBA23000991C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSMapClusteringDemo/MSMapClusteringDemo-Prefix.pch";
+				INFOPLIST_FILE = "MSMapClusteringDemo/MSMapClusteringDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A979810E160CBA23000991C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MSMapClusteringDemo/MSMapClusteringDemo-Prefix.pch";
+				INFOPLIST_FILE = "MSMapClusteringDemo/MSMapClusteringDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A97980E5160CBA23000991C9 /* Build configuration list for PBXProject "MSMapClusteringDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A979810A160CBA23000991C9 /* Debug */,
+				A979810B160CBA23000991C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A979810C160CBA23000991C9 /* Build configuration list for PBXNativeTarget "MSMapClusteringDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A979810D160CBA23000991C9 /* Debug */,
+				A979810E160CBA23000991C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A97980E2160CBA23000991C9 /* Project object */;
+}
