@@ -54,6 +54,11 @@ static float bucketSize = 60.0;
   return nil;
 }
 
+- (void)dealloc
+{
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:@"AnnotationsAdded" object:nil];
+}
+
 
 #pragma mark -
 #pragma mark Custom Methods
