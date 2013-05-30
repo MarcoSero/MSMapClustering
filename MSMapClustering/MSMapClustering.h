@@ -19,16 +19,15 @@
 #import <MapKit/MapKit.h>
 #import "MSAnnotation.h"
 
-@class MSMapClusteringDelegate;
-
 @interface MSMapClustering : MKMapView
 
 /*
-	Annotations that will be added with these methods
-	will be clustered
+	Annotations that will be added with these methods will be clustered
 */
 - (void)addMSAnnotation:(MSAnnotation *)annotation;
-
 - (void)addMSAnnotations:(NSArray *)annotations;
+
+- (void)removeMSAnnotation:(MSAnnotation *)annotation;
+- (void)removeAllMSAnnotations;
 
 @end

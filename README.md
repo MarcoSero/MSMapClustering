@@ -23,10 +23,13 @@ Include in your project the three classes above and then create your map view an
     MSMapClustering *mapView = [[MSMapClustering alloc] init];
 	mapView.delegate = [[MSMapClusteringDelegate alloc] initWithMapView:mapView];
 	
-Add annotations using these methods
+Add/remove annotations using these methods
 
     - (void)addMSAnnotation:(MSAnnotation *)annotation;
     - (void)addMSAnnotations:(NSArray *)annotations;
+    
+    - (void)removeMSAnnotation:(MSAnnotation *)annotation;
+    - (void)removeAllMSAnnotations;
     
 Implement the delegate's method in the class MSMapClusteringDelegate (obviously!), but pay attention if you want to change methods already inside it.
 

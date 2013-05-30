@@ -37,15 +37,34 @@
 {
   [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotation:annotation];
   // refresh visible annotations
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"ShouldUpdateAnnotations" object:self];
 }
 
 - (void)addMSAnnotations:(NSArray *)annotations
 {
   [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotations:annotations];
   // refresh visible annotations
-  [[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"ShouldUpdateAnnotations" object:self];
 
 }
+
+- (void)removeMSAnnotation:(MSAnnotation *)annotation
+{
+  [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView removeAnnotation:annotation];
+  [((MSMapClusteringDelegate *)self.delegate).mapView removeAnnotation:annotation];
+  // refresh visible annotations
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"ShouldUpdateAnnotations" object:self];
+}
+
+
+- (void)removeAllMSAnnotations
+{
+  NSArray *allAnnotations = [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView annotations];
+  [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView removeAnnotations:allAnnotations];
+  [((MSMapClusteringDelegate *)self.delegate).mapView removeAnnotations:allAnnotations];
+  // refresh visible annotations
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"ShouldUpdateAnnotations" object:self];
+}
+
 
 @end

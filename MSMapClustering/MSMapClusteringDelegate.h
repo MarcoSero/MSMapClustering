@@ -25,7 +25,7 @@
 /*
 	A pointer to the main MSMapClustering mapView
 */
-@property(strong, nonatomic) MSMapClustering *mapView;
+@property(weak, nonatomic) MSMapClustering *mapView;
 
 /*
 	This mapView stores all the annotations, you don't need to

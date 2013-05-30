@@ -22,17 +22,29 @@
 @end
 
 @implementation MSViewController
-@synthesize mapView;
-@synthesize myDelegate;
+@synthesize mapView = _mapView;
+@synthesize myDelegate = _myDelegate;
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
 
-  myDelegate = [[MSMapClusteringDelegate alloc] initWithMapView:self.mapView];
-  mapView.delegate = myDelegate;
+  _myDelegate = [[MSMapClusteringDelegate alloc] initWithMapView:self.mapView];
+  _mapView.delegate = _myDelegate;
+  [self addAnnotationsToMap];
 
-  // prepare annotations for mapview
+  // go to London
+  MKCoordinateRegion region;
+  region.center.latitude = 51.503347;
+  region.center.longitude = -0.127729;
+  region.span.latitudeDelta = 1.0;
+  region.span.longitudeDelta = 1.0;
+  [self.mapView setRegion:region animated:NO];
+}
+
+- (void)addAnnotationsToMap
+{
+// prepare annotations for mapview
   NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"annotations" ofType:@"plist"];
   NSArray *plistContent = [[[NSMutableDictionary alloc] initWithContentsOfFile:plistPath] objectForKey:@"annotations"];
   NSMutableArray *annotations = [[NSMutableArray alloc] init];
@@ -46,22 +58,13 @@
   }
   // ADD ANNOTATIONS
   [self.mapView addMSAnnotations:annotations];
-
-
-  // go to London
-  MKCoordinateRegion region;
-  region.center.latitude = 51.503347;
-  region.center.longitude = -0.127729;
-  region.span.latitudeDelta = 1.0;
-  region.span.longitudeDelta = 1.0;
-  [self.mapView setRegion:region animated:NO];
 }
 
 - (void)viewDidUnload
 {
   [super viewDidUnload];
-  self.mapView = nil;
-  self.myDelegate = nil;
+  _mapView = nil;
+  _myDelegate = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -71,6 +74,11 @@
   } else {
     return YES;
   }
+}
+
+- (IBAction)removeAllAnnotations:(id)sender
+{
+  [_mapView removeAllMSAnnotations];
 }
 
 @end

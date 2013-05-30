@@ -48,7 +48,7 @@ static float bucketSize = 60.0;
     // adds an observer to start refresh annotations
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(updateVisibleAnnotation)
-                                                 name:@"AnnotationsAdded" object:nil];
+                                                 name:@"ShouldUpdateAnnotations" object:nil];
     return self;
   }
   return nil;
@@ -56,7 +56,7 @@ static float bucketSize = 60.0;
 
 - (void)dealloc
 {
-  [[NSNotificationCenter defaultCenter] removeObserver:self name:@"AnnotationsAdded" object:nil];
+  [[NSNotificationCenter defaultCenter] removeObserver:self name:@"ShouldUpdateAnnotations" object:nil];
 }
 
 
