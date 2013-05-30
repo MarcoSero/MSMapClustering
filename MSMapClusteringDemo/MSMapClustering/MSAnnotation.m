@@ -27,11 +27,11 @@
 
 - (id)initWithCoordinates:(CLLocationCoordinate2D)location title:(NSString *)t subtitle:(NSString *)s
 {
-    if (self = [super init]) {
-        coordinate = location;
-        self.title = t;
-    }
-    return self;
+  if (self = [super init]) {
+    coordinate = location;
+    self.title = t;
+  }
+  return self;
 }
 
 @end

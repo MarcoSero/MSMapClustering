@@ -18,7 +18,7 @@
 #import "MSViewController.h"
 
 @interface MSViewController ()
-@property(strong, nonatomic) id<MKMapViewDelegate> myDelegate;
+@property(strong, nonatomic) id <MKMapViewDelegate> myDelegate;
 @end
 
 @implementation MSViewController
@@ -27,50 +27,50 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	
-	myDelegate = [[MSMapClusteringDelegate alloc] initWithMapView:self.mapView];
-	mapView.delegate = myDelegate;
-	
-	// prepare annotations for mapview
-	NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"annotations" ofType:@"plist"];
-	NSArray *plistContent = [[[NSMutableDictionary alloc] initWithContentsOfFile:plistPath] objectForKey:@"annotations"];	
-	NSMutableArray *annotations = [[NSMutableArray alloc] init];
-	for (id annotation in plistContent) {
-		CLLocationCoordinate2D coordinate;
-		coordinate.latitude = [[[annotation valueForKey:@"loc"] valueForKey:@"lat"] floatValue];
-		coordinate.longitude = [[[annotation valueForKey:@"loc"] valueForKey:@"lon"] floatValue];
-		NSString *title = [annotation valueForKey:@"title"];
-		MSAnnotation *a = [[MSAnnotation alloc] initWithCoordinates:coordinate title:title subtitle:@""];
-		[annotations addObject:a];
-	}
-	// ADD ANNOTATIONS
-	[self.mapView addMSAnnotations:annotations];
-	
-	
-	// go to London
-	MKCoordinateRegion region;
-	region.center.latitude = 51.503347;
-	region.center.longitude = -0.127729;
-	region.span.latitudeDelta = 1.0;
-	region.span.longitudeDelta = 1.0;
-	[self.mapView setRegion:region animated:NO];
+  [super viewDidLoad];
+
+  myDelegate = [[MSMapClusteringDelegate alloc] initWithMapView:self.mapView];
+  mapView.delegate = myDelegate;
+
+  // prepare annotations for mapview
+  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"annotations" ofType:@"plist"];
+  NSArray *plistContent = [[[NSMutableDictionary alloc] initWithContentsOfFile:plistPath] objectForKey:@"annotations"];
+  NSMutableArray *annotations = [[NSMutableArray alloc] init];
+  for (id annotation in plistContent) {
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = [[[annotation valueForKey:@"loc"] valueForKey:@"lat"] floatValue];
+    coordinate.longitude = [[[annotation valueForKey:@"loc"] valueForKey:@"lon"] floatValue];
+    NSString *title = [annotation valueForKey:@"title"];
+    MSAnnotation *a = [[MSAnnotation alloc] initWithCoordinates:coordinate title:title subtitle:@""];
+    [annotations addObject:a];
+  }
+  // ADD ANNOTATIONS
+  [self.mapView addMSAnnotations:annotations];
+
+
+  // go to London
+  MKCoordinateRegion region;
+  region.center.latitude = 51.503347;
+  region.center.longitude = -0.127729;
+  region.span.latitudeDelta = 1.0;
+  region.span.longitudeDelta = 1.0;
+  [self.mapView setRegion:region animated:NO];
 }
 
 - (void)viewDidUnload
 {
-    [super viewDidUnload];
-	self.mapView = nil;
-	self.myDelegate = nil;
+  [super viewDidUnload];
+  self.mapView = nil;
+  self.myDelegate = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-	    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-	} else {
-	    return YES;
-	}
+  if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+  } else {
+    return YES;
+  }
 }
 
 @end

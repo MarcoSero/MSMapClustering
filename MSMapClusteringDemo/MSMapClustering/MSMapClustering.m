@@ -18,34 +18,34 @@
 #import "MSMapClustering.h"
 #import "MSMapClusteringDelegate.h"
 
-@interface MSMapClustering()
+@interface MSMapClustering ()
 
 @end
 
 @implementation MSMapClustering
 
-- (id)initWithDelegate:(id<MKMapViewDelegate>)theDelegate
+- (id)initWithDelegate:(id <MKMapViewDelegate>)theDelegate
 {
-	// force to set MSMapClusteringDelegate
-	if ([theDelegate isKindOfClass:[MSMapClusteringDelegate class]]) {
-		return (self = [self initWithDelegate:theDelegate]);
-	}
-	return nil;
+  // force to set MSMapClusteringDelegate
+  if ([theDelegate isKindOfClass:[MSMapClusteringDelegate class]]) {
+    return (self = [self initWithDelegate:theDelegate]);
+  }
+  return nil;
 }
 
 - (void)addMSAnnotation:(MSAnnotation *)annotation
 {
-	[((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotation:annotation];
-	// refresh visible annotations
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
+  [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotation:annotation];
+  // refresh visible annotations
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
 }
 
 - (void)addMSAnnotations:(NSArray *)annotations
 {
-	[((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotations:annotations];
-	// refresh visible annotations
-	[[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
-    
+  [((MSMapClusteringDelegate *)self.delegate)._allAnnotationsMapView addAnnotations:annotations];
+  // refresh visible annotations
+  [[NSNotificationCenter defaultCenter] postNotificationName:@"AnnotationsAdded" object:self];
+
 }
 
 @end

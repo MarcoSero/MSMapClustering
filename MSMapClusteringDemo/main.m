@@ -10,9 +10,8 @@
 
 #import "MSAppDelegate.h"
 
-int main(int argc, char *argv[])
-{
-	@autoreleasepool {
-	    return UIApplicationMain(argc, argv, nil, NSStringFromClass([MSAppDelegate class]));
-	}
+int main(int argc, char *argv[]) {
+  @autoreleasepool {
+    return UIApplicationMain(argc, argv, nil, NSStringFromClass([MSAppDelegate class]));
+  }
 }

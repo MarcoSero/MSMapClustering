@@ -21,6 +21,6 @@
 
 @interface MSViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet MSMapClustering *mapView;
+@property(strong, nonatomic) IBOutlet MSMapClustering *mapView;
 
 @end

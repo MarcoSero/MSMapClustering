@@ -28,6 +28,7 @@
 	will be clustered
 */
 - (void)addMSAnnotation:(MSAnnotation *)annotation;
+
 - (void)addMSAnnotations:(NSArray *)annotations;
 
 @end

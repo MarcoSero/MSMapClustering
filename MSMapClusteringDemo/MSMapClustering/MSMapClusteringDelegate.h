@@ -25,17 +25,17 @@
 /*
 	A pointer to the main MSMapClustering mapView
 */
-@property (strong, nonatomic) MSMapClustering *mapView;
- 
+@property(strong, nonatomic) MSMapClustering *mapView;
+
 /*
 	This mapView stores all the annotations, you don't need to
 	worry about it.
 */
-@property (strong, nonatomic) MKMapView *_allAnnotationsMapView;
+@property(strong, nonatomic) MKMapView *_allAnnotationsMapView;
 
 /*
 	Initialize it with your MSMapClustering mapView
 */
--(id)initWithMapView:(MSMapClustering *)aMapView;
+- (id)initWithMapView:(MSMapClustering *)aMapView;
 
 @end

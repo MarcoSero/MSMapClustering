@@ -21,13 +21,13 @@
 @interface MSAnnotation : NSObject <MKAnnotation>
 
 // protocol implementation
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *subtitle;
-@property (nonatomic) CLLocationCoordinate2D coordinate;
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, copy) NSString *subtitle;
+@property(nonatomic) CLLocationCoordinate2D coordinate;
 
 // MSMapClustering
-@property (nonatomic, retain) MSAnnotation *clusterAnnotation;
-@property (nonatomic, retain) NSArray *containedAnnotations;
+@property(nonatomic, retain) MSAnnotation *clusterAnnotation;
+@property(nonatomic, retain) NSArray *containedAnnotations;
 
 - (id)initWithCoordinates:(CLLocationCoordinate2D)location title:(NSString *)t subtitle:(NSString *)s;
 
