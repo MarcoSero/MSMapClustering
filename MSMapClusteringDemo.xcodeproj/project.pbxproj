@@ -128,7 +128,8 @@
 				A9798114160CBA2F000991C9 /* MSMapClusteringDelegate.h */,
 				A9798115160CBA2F000991C9 /* MSMapClusteringDelegate.m */,
 			);
-			path = MSMapClustering;
+			name = MSMapClustering;
+			path = ../MSMapClustering;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
