@@ -114,7 +114,7 @@ static float bucketSize = 60.0;
   // Determine how wide each bucket will be, as a MapRect square
   CLLocationCoordinate2D leftCoordinate = [self.mapView convertPoint:CGPointZero toCoordinateFromView:[self.mapView superview]];
   CLLocationCoordinate2D rightCoordinate = [self.mapView convertPoint:CGPointMake(bucketSize, 0) toCoordinateFromView:[self.mapView superview]];
-  double gridSize = MKMapPointForCoordinate(rightCoordinate).x - MKMapPointForCoordinate(leftCoordinate).x;
+  double gridSize = fabs(MKMapPointForCoordinate(rightCoordinate).x - MKMapPointForCoordinate(leftCoordinate).x);
   MKMapRect gridMapRect = MKMapRectMake(0, 0, gridSize, gridSize);
 
   // Condense annotations with a padding of two squares, around the visibleMapRect
